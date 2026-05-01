@@ -61,7 +61,7 @@ export default function Contact() {
             </div>
             <div>
               <div className="ci-label">Phone</div>
-              <div className="ci-val">+94 77 000 0000</div>
+              <div className="ci-val">+94 777 154 524 / +94 716 539 471 </div>
             </div>
           </div>
 
@@ -87,7 +87,7 @@ export default function Contact() {
             </div>
             <div>
               <div className="ci-label">Headquarters</div>
-              <div className="ci-val">Colombo, Sri Lanka · Global Reach</div>
+              <div className="ci-val">Kandy, Sri Lanka · Global Reach</div>
             </div>
           </div>
         </div>
@@ -115,12 +115,14 @@ export default function Contact() {
             <div className="fg">
               <label htmlFor="service">Service Interest</label>
               <select id="service">
-                <option>AI & Neural Engineering</option>
-                <option>Enterprise Software</option>
-                <option>Cloud & DevOps</option>
+                <option>Artificial Intelligence & Machine Learning</option>
+                <option>Web & Mobile App Development</option>
+                <option>Enterprise Software & Digital Transformation</option>
                 <option>Data Intelligence</option>
-                <option>Cybersecurity</option>
-                <option>Digital Transformation</option>
+                <option>Real Estate Management</option>
+                <option>Crypto Trading & Fintech</option>
+                <option>Tourism, Booking & Itinerary</option>
+                <option>Cloud-based & On-premise Solutions</option>
               </select>
             </div>
             <div className="fg">

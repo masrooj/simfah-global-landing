@@ -24,11 +24,14 @@ export default function Footer() {
 
           <div className="ft-col">
             <h4>Services</h4>
-            <Link href="#services">AI & Neural Engineering</Link>
-            <Link href="#services">Enterprise Software</Link>
-            <Link href="#services">Cloud & DevOps</Link>
+            <Link href="#services">Artificial Intelligence & Machine Learning</Link>
+            <Link href="#services">Web & Mobile App Development</Link>
+            <Link href="#services">Enterprise Software & Digital Transformation</Link>
             <Link href="#services">Data Intelligence</Link>
-            <Link href="#services">Cybersecurity</Link>
+            <Link href="#services">Real Estate Management</Link>
+            <Link href="#services">Crypto Trading & Fintech</Link>
+            <Link href="#services">Tourism, Booking & Itinerary</Link>
+            <Link href="#services">Cloud-based & On-premise Solutions</Link>
           </div>
 
           <div className="ft-col">
@@ -43,15 +46,15 @@ export default function Footer() {
           <div className="ft-col">
             <h4>Contact</h4>
             <a href="mailto:hello@simfahglobal.com">hello@simfahglobal.com</a>
-            <a href="tel:+940770000000">+94 77 000 0000</a>
-            <a href="#">Colombo, Sri Lanka</a>
+            <a href="tel:+94777154524">+94 777 154 524 / +94 716 539 471</a>
+            <a href="#">Kandy, Sri Lanka</a>
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Service</a>
           </div>
         </div>
 
         <div className="ft-bot">
-          <div className="ft-copy">© 2025 SIMFAH Global. All rights reserved.</div>
+          <div className="ft-copy">© 2026 SIMFAH Global. All rights reserved.</div>
           <div className="ft-tag">Built with <span>■</span> SIMFAH · Ignite. Innovate. Dominate.</div>
         </div>
       </div>

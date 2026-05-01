@@ -1,6 +1,20 @@
+
+
 # SIMFAH Global — Next.js App
 
-A pixel-perfect conversion of the SIMFAH Global website to a Next.js 14 (App Router) + TypeScript application.
+SIMFAH Global delivers cutting-edge solutions in:
+
+
+Our Core Capabilities:
+
+- Artificial Intelligence & Machine Learning
+- Web & Mobile App Development
+- Web Design
+- ERP, CRM, Payroll, HR, POS
+- Real Estate Management
+- Crypto Trading Platforms
+- Tourism, Booking & Itinerary Management
+- Cloud-based and On-premise Solutions
 
 ## Project Structure
 
@@ -27,7 +41,7 @@ simfah-nextjs/
 │   ├── Footer.tsx         # Footer
 │   └── ScrollReveal.tsx   # Scroll-triggered reveal animations
 └── public/
-    └── simfah-logo.png    # ← Place your logo here
+	└── simfah-logo.png    # ← Place your logo here
 ```
 
 ## Quick Start
