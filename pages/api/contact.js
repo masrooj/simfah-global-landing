@@ -1,0 +1,47 @@
+import nodemailer from 'nodemailer'
+
+export default async function handler(req, res) {
+  if (req.method !== 'POST') {
+    return res.status(405).json({ error: 'Method not allowed' })
+  }
+
+  const { firstName, lastName, company, email, service, brief, subject } = req.body
+
+  if (!firstName || !email || !brief) {
+    return res.status(400).json({ error: 'Missing required fields' })
+  }
+
+  const transporter = nodemailer.createTransport({
+    host: process.env.SMTP_HOST,
+    port: Number(process.env.SMTP_PORT),
+    secure: process.env.SMTP_SECURE === 'true',
+    auth: {
+      user: process.env.SMTP_USER,
+      pass: process.env.SMTP_PASS,
+    },
+  })
+
+  const mailOptions = {
+    from: email,
+    to: 'masrooj17@yahoo.com', //'hello@simfahglobal.com',
+    subject: subject
+      ? `[SIMFAH Website] ${subject} — ${firstName} ${lastName}`
+      : `[SIMFAH Website] New Enquiry — ${service} from ${firstName} ${lastName}`,
+    text:
+      `You have received a new message from the website contact form.\n\n` +
+      `Name:     ${firstName} ${lastName}\n` +
+      `Company:  ${company || 'N/A'}\n` +
+      `Email:    ${email}\n` +
+      `Service:  ${service || 'N/A'}\n` +
+      (subject ? `Subject:  ${subject}\n` : '') +
+      `\nMessage:\n${brief}`,
+    replyTo: email,
+  }
+
+  try {
+    await transporter.sendMail(mailOptions)
+    res.status(200).json({ message: 'Email sent successfully' })
+  } catch (error) {
+    res.status(500).json({ error: 'Failed to send email' })
+  }
+}
