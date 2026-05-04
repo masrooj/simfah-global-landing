@@ -183,8 +183,8 @@ export default function Hero() {
             <span className="ghost">Empires</span>
           </h1>
           <p className="hero-sub">
-            Transforming global enterprises through AI-powered architectures, neural-driven platforms,
-            and enterprise software that operates at the speed of tomorrow.
+            Simfah Global designs and ships secure digital platforms, AI products, and cloud ecosystems
+            for companies scaling across regions.
           </p>
           <div className="hero-actions">
             <Link href="#contact" className="btn-prim"><span>Launch Your Vision</span></Link>
@@ -192,15 +192,15 @@ export default function Hero() {
           </div>
           <div className="hero-stats">
             <div className="hstat">
-              <div className="hstat-num"><span data-target="350">350</span><sup>+</sup></div>
-              <div className="hstat-label">Projects Delivered</div>
+              <div className="hstat-num"><span data-target="120">120</span><sup>+</sup></div>
+              <div className="hstat-label">Solutions Delivered</div>
             </div>
             <div className="hstat">
-              <div className="hstat-num"><span data-target="98">98</span><sup>%</sup></div>
-              <div className="hstat-label">Client Retention</div>
+              <div className="hstat-num"><span data-target="99">99</span><sup>%</sup></div>
+              <div className="hstat-label">Client Satisfaction</div>
             </div>
             <div className="hstat">
-              <div className="hstat-num"><span data-target="40">40</span><sup>+</sup></div>
+              <div className="hstat-num"><span data-target="18">18</span><sup>+</sup></div>
               <div className="hstat-label">Countries Served</div>
             </div>
           </div>

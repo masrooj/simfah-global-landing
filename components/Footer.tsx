@@ -13,7 +13,7 @@ export default function Footer() {
                 SIMFAH <span style={{ color: 'var(--fire)' }}>GLOBAL</span>
               </span>
             </div>
-            <p>Engineering the intelligent software backbone of tomorrow's global enterprises. Trusted by leaders across 40+ countries.</p>
+            <p>Engineering the intelligent software backbone of tomorrow's global enterprises. Trusted by leaders across 18+ countries.</p>
             <div className="ft-socials">
               <a href="#" className="fsoc">in</a>
               <a href="#" className="fsoc">tw</a>

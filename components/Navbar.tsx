@@ -20,7 +20,7 @@ export default function Navbar() {
         </div>
         <div className="nav-brand">
           <div className="nav-brand-main">SIMFAH<span> GLOBAL</span></div>
-          <div className="nav-brand-sub">Ignite Your Digital Future</div>
+          <div className="nav-brand-sub">Build <i>Fast</i>. Scale Smart.</div>
         </div>
       </Link>
 
