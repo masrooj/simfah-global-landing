@@ -1,3 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@400;600;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=DM+Mono:wght@300;400&display=swap');
+/* Modern WhatsApp button UI/UX */
+.btn-wa-uiux {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg2) !important;
+  color: #25D366 !important;
+  border: 2px solid #25D366 !important;
+  border-radius: 6px !important;
+  font-weight: 700;
+  padding: 12px 22px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  transition: background 0.18s, color 0.18s, box-shadow 0.18s, border-color 0.18s;
+  box-shadow: 0 2px 12px rgba(37,211,102,0.08);
+}
+.btn-wa-uiux:hover, .btn-wa-uiux:focus {
+  background: #25D366 !important;
+  color: var(--bg2) !important;
+  border-color: #25D366 !important;
+  box-shadow: 0 4px 18px rgba(37,211,102,0.18);
+  text-decoration: none;
+}
+/* WhatsApp button: white background, green text */
+.btn-wa-white {
+  background: #fff !important;
+  color: #25D366 !important;
+  border: 1.5px solid #25D366 !important;
+}
+/* Theme-matching button for WhatsApp */
+.btn-theme {
+  background: var(--fire) !important;
+  color: #fff !important;
+  border: none !important;
+}
+/* WhatsApp button distinct style */
+.btn-wa {
+  background: #25D366 !important;
+  color: #fff !important;
+  border: none !important;
+}
 /* ── RESPONSIVE ENHANCEMENTS ── */
 @media (max-width: 1100px) {
   .hero-content, .about-grid, .why-grid, .contact-grid { grid-template-columns: 1fr; }
@@ -51,7 +94,6 @@
   .proc-steps { grid-template-columns: 1fr; }
   .testi-track { grid-template-columns: 1fr; }
 }
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@400;600;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=DM+Mono:wght@300;400&display=swap');
 
 :root {
   --fire: #FF6D00;
