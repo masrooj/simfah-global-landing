@@ -33,11 +33,11 @@ export default async function handler(req, res) {
   })
 
     const mailOptions = {
-      from: process.env.SMTP_FROM, // must match authenticated user
+      from: `SIMFAH Global <${process.env.SMTP_FROM}>`, // display name in inbox
       to: process.env.SMTP_FROM,
       subject: subject
-        ? `[SIMFAH Global] ${subject} — ${firstName} ${lastName}`
-        : `[SIMFAH Global] New Enquiry — ${service} from ${firstName} ${lastName}`,
+        ? `${subject} — ${firstName} ${lastName}`
+        : `New Enquiry — ${service} from ${firstName} ${lastName}`,
       text:
         `You have received a new message from the website contact form.\n\n` +
         `Name:     ${firstName} ${lastName}\n` +
