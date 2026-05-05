@@ -11,10 +11,21 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'Missing required fields' })
   }
 
+  // Determine encryption/secure settings
+  let secure = process.env.SMTP_SECURE === 'true';
+  if (process.env.SMTP_ENCRYPTION) {
+    const enc = process.env.SMTP_ENCRYPTION.toLowerCase();
+    if (enc === 'ssl' || enc === 'tls') {
+      secure = true;
+    } else if (enc === 'none' || enc === 'false') {
+      secure = false;
+    }
+  }
+
   const transporter = nodemailer.createTransport({
     host: process.env.SMTP_HOST,
     port: Number(process.env.SMTP_PORT),
-    secure: process.env.SMTP_SECURE === 'true',
+    secure,
     auth: {
       user: process.env.SMTP_USER,
       pass: process.env.SMTP_PASS,
