@@ -23,10 +23,10 @@ export default async function handler(req, res) {
 
   const mailOptions = {
     from: email,
-    to: 'masrooj17@yahoo.com', //'hello@simfahglobal.com',
+    to: 'connect@simfahglobal.com',
     subject: subject
-      ? `[SIMFAH Website] ${subject} — ${firstName} ${lastName}`
-      : `[SIMFAH Website] New Enquiry — ${service} from ${firstName} ${lastName}`,
+      ? `[SIMFAH Global] ${subject} — ${firstName} ${lastName}`
+      : `[SIMFAH Global] New Enquiry — ${service} from ${firstName} ${lastName}`,
     text:
       `You have received a new message from the website contact form.\n\n` +
       `Name:     ${firstName} ${lastName}\n` +

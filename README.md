@@ -62,11 +62,11 @@ Fallback placeholder images are used if the file is missing.
 
 The contact form uses `mailto:` — zero backend, zero API key required.
 When a visitor submits, their default email app opens with all fields pre-filled,
-addressed to `hello@simfahglobal.com`.
+addressed to `connect@simfahglobal.com`.
 
 To change the recipient email, edit line 5 of `components/Contact.tsx`:
 ```ts
-const TO = 'hello@simfahglobal.com'
+const TO = 'connect@simfahglobal.com'
 ```
 
 ## Build for Production

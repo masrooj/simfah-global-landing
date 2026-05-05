@@ -50,7 +50,7 @@ export default function CTA() {
         </p>
         <div className="cta-actions reveal d3">
           <Link href="#contact" className="btn-prim"><span>Book Free Strategy Call</span></Link>
-          <a href="mailto:hello@simfahglobal.com" className="btn-sec">Email Us</a>
+          <a href="mailto:connect@simfahglobal.com" className="btn-sec">Email Us</a>
           <a
             href={waUrl}
             className="btn-sec btn-wa-uiux"

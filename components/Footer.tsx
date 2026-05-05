@@ -45,7 +45,7 @@ export default function Footer() {
 
           <div className="ft-col">
             <h4>Contact</h4>
-            <a href="mailto:hello@simfahglobal.com">hello@simfahglobal.com</a>
+            <a href="mailto:connect@simfahglobal.com">connect@simfahglobal.com</a>
             <a href="tel:+94777154524">+94 777 154 524 / +94 716 539 471</a>
             <a href="#">Kandy, Sri Lanka</a>
             <a href="#">Privacy Policy</a>

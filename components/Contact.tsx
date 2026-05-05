@@ -1,7 +1,7 @@
 'use client'
 import { useState, useRef } from 'react'
 
-const TO = 'hello@simfahglobal.com'
+const TO = 'connect@simfahglobal.com'
 
 export default function Contact() {
   const [msg, setMsg] = useState<{ text: string; ok: boolean } | null>(null)
@@ -74,7 +74,7 @@ export default function Contact() {
             </div>
             <div>
               <div className="ci-label">Email</div>
-              <div className="ci-val">hello@simfahglobal.com</div>
+              <div className="ci-val">connect@simfahglobal.com</div>
             </div>
           </div>
 
