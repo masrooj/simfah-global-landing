@@ -32,22 +32,22 @@ export default async function handler(req, res) {
     },
   })
 
-  const mailOptions = {
-    from: email,
-    to: 'connect@simfahglobal.com',
-    subject: subject
-      ? `[SIMFAH Global] ${subject} — ${firstName} ${lastName}`
-      : `[SIMFAH Global] New Enquiry — ${service} from ${firstName} ${lastName}`,
-    text:
-      `You have received a new message from the website contact form.\n\n` +
-      `Name:     ${firstName} ${lastName}\n` +
-      `Company:  ${company || 'N/A'}\n` +
-      `Email:    ${email}\n` +
-      `Service:  ${service || 'N/A'}\n` +
-      (subject ? `Subject:  ${subject}\n` : '') +
-      `\nMessage:\n${brief}`,
-    replyTo: email,
-  }
+    const mailOptions = {
+      from: process.env.SMTP_FROM, // must match authenticated user
+      to: process.env.SMTP_FROM,
+      subject: subject
+        ? `[SIMFAH Global] ${subject} — ${firstName} ${lastName}`
+        : `[SIMFAH Global] New Enquiry — ${service} from ${firstName} ${lastName}`,
+      text:
+        `You have received a new message from the website contact form.\n\n` +
+        `Name:     ${firstName} ${lastName}\n` +
+        `Company:  ${company || 'N/A'}\n` +
+        `Email:    ${email}\n` +
+        `Service:  ${service || 'N/A'}\n` +
+        (subject ? `Subject:  ${subject}\n` : '') +
+        `\nMessage:\n${brief}`,
+      replyTo: email, // so replies go to the user
+    }
 
   try {
     await transporter.sendMail(mailOptions)
