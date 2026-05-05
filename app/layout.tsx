@@ -3,7 +3,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://simfahglobal.com'),
-  title: 'Simfah Global | Ignite your global solution',
+  title: 'Simfah Global | Build Fast Scale smart',
   description:
     'Simfah Global delivers AI-powered software engineering, cloud transformation, and digital products for ambitious companies scaling worldwide.',
   keywords: [
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     'web and mobile development',
   ],
   openGraph: {
-    title: 'Simfah Global | Ignite your global solution',
+    title: 'Simfah Global | Build Fast Scale smart',
     description:
       'Launch and scale with Simfah Global: AI-native engineering, secure cloud platforms, and global product delivery.',
     url: 'https://simfahglobal.com',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Simfah Global | Ignite your global solution',
+    title: 'Simfah Global | Build Fast Scale smart',
     description:
       'AI-powered software products, enterprise systems, and cloud transformation for global businesses.',
     images: ['/simfah-logo.png'],
