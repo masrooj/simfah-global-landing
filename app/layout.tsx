@@ -2,30 +2,31 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://simfahglobal.com'),
-  title: 'Simfah Global | Build Fast Scale smart',
-  description:
-    'Simfah Global delivers AI-powered software engineering, cloud transformation, and digital products for ambitious companies scaling worldwide.',
+  title: 'SIMFAH Global | AI, Apps & Digital Solutions',
+  description: 'Unlock your business growth with SIMFAH Global. We deliver AI, web/mobile apps, ERP, CRM, fintech, real estate, tourism, and more globally.',
   keywords: [
-    'Simfah Global',
-    'software company',
-    'AI development',
-    'enterprise software',
-    'cloud transformation',
-    'web and mobile development',
+    'AI',
+    'web development',
+    'mobile apps',
+    'ERP',
+    'CRM',
+    'fintech',
+    'real estate',
+    'tourism',
+    'SIMFAH Global',
+    'digital solutions',
   ],
   openGraph: {
-    title: 'Simfah Global | Build Fast Scale smart',
-    description:
-      'Launch and scale with Simfah Global: AI-native engineering, secure cloud platforms, and global product delivery.',
-    url: 'https://simfahglobal.com',
-    siteName: 'Simfah Global',
+    title: 'SIMFAH Global | AI, Apps & Digital Solutions',
+    description: 'Unlock your business growth with SIMFAH Global. We deliver AI, web/mobile apps, ERP, CRM, fintech, real estate, tourism, and more globally.',
+    url: 'https://simfahglobal.com/',
+    siteName: 'SIMFAH Global',
     images: [
       {
         url: '/simfah-logo.png',
         width: 1200,
         height: 630,
-        alt: 'Simfah Global',
+        alt: 'SIMFAH Global',
       },
     ],
     locale: 'en_US',
@@ -33,9 +34,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Simfah Global | Build Fast Scale smart',
-    description:
-      'AI-powered software products, enterprise systems, and cloud transformation for global businesses.',
+    title: 'SIMFAH Global | AI, Apps & Digital Solutions',
+    description: 'Unlock your business growth with SIMFAH Global. We deliver AI, web/mobile apps, ERP, CRM, fintech, real estate, tourism, and more globally.',
     images: ['/simfah-logo.png'],
   },
   robots: {
